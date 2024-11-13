@@ -40,7 +40,7 @@ class BoardService {
         count = 0;
     }
 
-    public void addPost(String content, String writer, int password) {
+    public void Post(String content, String writer, int password) {
         if (count < 100) {
             post[count] = new Post(content, writer, password);
             count++;
@@ -81,7 +81,7 @@ public class BoardServiceTest {
                 String author = scanner.nextLine();
                 System.out.print("비밀번호를 입력하시오. : ");
                 int password = scanner.nextInt();
-                boardService.addPost(content, author, password);
+                boardService.Post(content, author, password);
             } else if (choice == 2) {
                 boardService.printPosts();
             } else if (choice == 3) {
