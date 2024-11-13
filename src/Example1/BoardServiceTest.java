@@ -32,17 +32,17 @@ class Post {
 }
 
 class BoardService {
-    private Post[] posts;
+    private Post[] post;
     private int count;
 
     public BoardService() {
-        posts = new Post[100];
+        post = new Post[100];
         count = 0;
     }
 
     public void addPost(String content, String writer, int password) {
         if (count < 100) {
-            posts[count] = new Post(content, writer, password);
+            post[count] = new Post(content, writer, password);
             count++;
             System.out.println("게시물이 추가되었습니다.");
         } else {
@@ -56,7 +56,7 @@ class BoardService {
             return;
         }
         for (int i = 0; i < count; i++) {
-            System.out.println(posts[i]);
+            System.out.println(post[i]);
         }
     }
 }
