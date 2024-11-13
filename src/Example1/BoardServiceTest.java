@@ -78,10 +78,10 @@ public class BoardServiceTest {
                 System.out.print("내용 : ");
                 String content = scanner.nextLine();
                 System.out.print("작성자 : ");
-                String author = scanner.nextLine();
+                String writer = scanner.nextLine();
                 System.out.print("비밀번호를 입력하시오. : ");
                 int password = scanner.nextInt();
-                boardService.Post(content, author, password);
+                boardService.Post(content, writer, password);
             } else if (choice == 2) {
                 boardService.printPosts();
             } else if (choice == 3) {
