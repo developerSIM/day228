@@ -17,7 +17,7 @@ class Post {
         return content;
     }
 
-    public String getAuthor() {
+    public String getWriter() {
         return writer;
     }
 
