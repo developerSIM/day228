@@ -67,19 +67,19 @@ public class BoardServiceTest {
         BoardService boardService = new BoardService();
 
         while (true) {
-            System.out.println("1. 게시물 추가");
-            System.out.println("2. 게시물 출력");
-            System.out.println("3. 종료");
+            System.out.println("1. 게시물 추가하기");
+            System.out.println("2. 게시물 출력하기");
+            System.out.println("3. 종료하기");
             System.out.print("선택: ");
             int choice = scanner.nextInt();
             scanner.nextLine();
 
             if (choice == 1) {
-                System.out.print("내용: ");
+                System.out.print("내용 : ");
                 String content = scanner.nextLine();
-                System.out.print("작성자: ");
+                System.out.print("작성자 : ");
                 String author = scanner.nextLine();
-                System.out.print("비밀번호: ");
+                System.out.print("비밀번호를 입력하시오. : ");
                 int password = scanner.nextInt();
                 boardService.addPost(content, author, password);
             } else if (choice == 2) {
@@ -88,7 +88,7 @@ public class BoardServiceTest {
                 System.out.println("프로그램을 종료합니다.");
                 break;
             } else {
-                System.out.println("잘못된 선택입니다. 다시 시도하세요.");
+                System.out.println("잘못됬습니다. 다시 시도하세요.");
             }
         }
 
