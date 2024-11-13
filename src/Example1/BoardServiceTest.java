@@ -7,7 +7,7 @@ class Post {
     private String writer;  // 작성자
     private int password;   // 비밀번호
 
-    public Post(String content, String author, int password) {
+    public Post(String content, String writer, int password) {
         this.content = content;
         this.writer = writer;
         this.password = password;
